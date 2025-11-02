@@ -1,0 +1,160 @@
+@import "everforest.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Iosevka;
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0,0,0,0);
+    color: @text;
+}
+
+tooltip {
+    background: @base;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @overlay;
+}
+#custom-back,
+#custom-forward,
+#mpris,
+#bluetooth,
+#custom-notification,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#workspaces,
+#cava {
+    background: @base;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid @border;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @muted;
+}
+
+#workspaces button.active {
+    color: @select;
+}
+#workspaces button:hover {
+    background: @base;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces {
+    background: @base;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 10px;
+}
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+#clock {
+    color: @yellow;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+}
+
+#pulseaudio {
+    color: @green;
+    border-right: 0px;
+    border-radius: 10px 0 0 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+#cava {
+	border-radius: 0px 10px 10px 0px;
+	padding-left: 10px;
+	margin-left: 0px;
+	color: @green;
+	border-left: none;
+}
+
+#cava.silent {
+	padding: 0px;
+	margin-left: 0px;
+}
+
+#battery {
+    color: @yellow;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 20px;
+}
+
+#battery.charging {
+    color: @green;
+}
+#battery.critical {
+    color: @red;
+}
+
+#battery.charging.critical {
+    color: @orange;
+}
+
+
+
+#custom-notification {
+	border-radius: 10px;
+}
+#image {
+	border-radius: 10px;
+}
+#image.empty {
+	background-color: @orange;
+}
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
+#bluetooth {
+	border-radius: 10px;
+}
+
+#custom-back {
+	border-left: none;
+	border-right: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 5px;
+	color: @green;
+}
+
+#mpris {
+	border-left: none;
+	border-right: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	color: @green;
+}
+
+#custom-forward {
+	border-left: none;
+	border-right: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 5px;
+	padding-right: 3px;
+	color: @green;
+}

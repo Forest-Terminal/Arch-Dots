@@ -1,0 +1,186 @@
+@import "/home/forest-terminal/.cache/wal/colors-waybar.css";
+@import url("bongo-cat-frame.css");
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Iosevka Regular;
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+  color: @color7;
+}
+
+tooltip {
+  background: @color0;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @color8;
+}
+
+#custom-guihelp,
+#custom-cava,
+#mpris,
+#bluetooth,
+#custom-notification,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#workspaces,
+#cava {
+  background: @color0;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid @color8;
+}
+
+#custom-bongocat {
+  background-color: @color0;
+}
+
+#custom-cava {
+  background: @color0;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid @color8;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 10px;
+  margin-left: 0px;
+  color: @color2;
+  border-left: none;
+  font-size: 10px;
+
+}
+
+#workspaces button {
+  padding: 5px;
+  color: @color4;
+}
+
+#workspaces button.empty {
+  color: @color8;
+}
+
+#workspaces button.visible {
+  color: chocolate;
+}
+
+#workspaces button.active {
+  color: @color8;
+}
+
+#workspaces button:hover {
+  background: @color0;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+
+
+
+#workspaces {
+  background: @color0;
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+
+#window {
+  border-radius: 10px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  border: none;
+}
+
+#clock {
+  color: @color3;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#pulseaudio {
+  color: @color2;
+  border-right: 0px;
+  border-radius: 10px 0 0 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+#cava {
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 10px;
+  margin-left: 0px;
+  color: @color2;
+  border-left: none;
+}
+
+#cava.silent {
+  padding: 0px;
+  margin-left: 0px;
+}
+
+#battery {
+  color: @color4;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 20px;
+}
+
+#battery.charging {
+  color: @color2;
+}
+
+#battery.critical {
+  color: @color1;
+}
+
+#battery.charging.critical {
+  color: @color5;
+}
+
+
+
+#custom-notification {
+  border-radius: 10px;
+}
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
+
+#bluetooth {
+  border-radius: 10px;
+  color: @color4;
+}
+
+#mpris {
+  border-left: none;
+  border-right: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  color: @color2;
+}
+
+#custom-guihelp {
+  border-radius: 10px;
+  opacity: 0;
+}
+
+#custom-guihelp:hover {
+  opacity: 1;
+}

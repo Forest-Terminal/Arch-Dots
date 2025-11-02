@@ -1,0 +1,249 @@
+@import "everforest.css";
+@define-color cc-bg #16161d;
+@define-color noti-border-color #dcd7ba;
+@define-color noti-bg #11111b;
+@define-color noti-bg-darker #2b2b39;
+@define-color noti-bg-hover #1b1b2b;
+@define-color noti-bg-focus #1b1b1b;
+@define-color noti-close-bg #dcd7ba;
+@define-color noti-close-bg-hover #dcd7ba;
+@define-color text-color #dcd7ba;
+@define-color text-color-disabled #828282;
+@define-color bg-selected #7e9cd8;
+@define-color border-green #76946a;
+@define-color red-base #c34043;
+@define-color red-hover #e46876;
+@define-color green-base #98bb6c;
+@define-color blue-base #7e9cd8;
+
+* {
+  font-family: "JetBrainsMono NFM SemiBold", monospace;
+  border-radius: 0;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  opacity: 1;
+  background: @subtle;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification,
+.notification-content,
+.notification-action,
+.notification-default-action,
+.inline-reply-entry,
+.inline-reply-button,
+.widget-title,
+.widget-title>button,
+.widget-dnd,
+.widget-dnd>switch,
+.widget-dnd>switch slider,
+.widget-label>label,
+.widget-buttons-grid,
+.widget-buttons-grid>flowbox>flowboxchild>button,
+.widget-volume,
+.widget-backlight,
+.widget-mpris,
+.widget-mpris>box>button,
+.widget-mpris-player,
+.widget-mpris-album-art {
+  border-radius: 1rem;
+}
+
+.notification {
+  background: @overlay;
+  border: 2px solid @border;
+  margin: 3px -2px 3px 0;
+}
+
+.close-button {
+  background: @orange;
+  color: @text;
+  text-shadow: none;
+  padding: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 0;
+  border: none;
+}
+
+.notification:hover .close-button {
+  opacity: 1;
+}
+
+.close-button:hover {
+  background: @red;
+  box-shadow: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.notification-action {
+  border: 2px solid @border;
+  border-top: none;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  color: @text;
+  background: @surface;
+}
+
+.inline-reply-entry {
+  background: #00FF00;
+  color: @text;
+  caret-color: #FF0000;
+  border: 1px solid #00FF00;
+}
+
+.inline-reply-button {
+  margin-top: 4px;
+  margin-left: 4px;
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  color: @text;
+}
+
+.inline-reply-button:disabled {
+  background: transparent;
+  color: @muted;
+  border: 1px solid transparent;
+}
+
+.inline-reply-button:hover {
+  background: #00FF00;
+}
+
+.summary {
+  font-size: 20px;
+  font-weight: 700;
+  background: transparent;
+  color: @blue;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @text;
+  text-shadow: none;
+  margin-right: 18px;
+  margin-bottom: 16px;
+}
+
+.body {
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  color: @text;
+  text-shadow: none;
+}
+
+.control-center {
+  background: @base;
+  border: 2px solid @select;
+  border-radius: 1rem;
+}
+
+.widget-title {
+  color: @text;
+  background: @surface;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.widget-title>button {
+  font-size: 1rem;
+  color: @text;
+  background: @overlay;
+  box-shadow: none;
+}
+
+.widget-title>button:hover {
+  background: @red;
+  color: @text;
+}
+
+.widget-dnd {
+  background: @noti-bg-darker;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: large;
+  color: @blue;
+}
+
+.widget-dnd>switch {
+  background: @blue;
+  border-radius: 1rem;
+}
+
+.widget-dnd>switch:checked {
+  background: @red;
+}
+
+.widget-label>label {
+  font-size: 1rem;
+  color: @text;
+  margin: 10px;
+}
+
+.widget-buttons-grid {
+  font-size: x-large;
+  padding: 5px;
+  margin: 10px;
+  background: @surface;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+  margin: 3px;
+  background: @overlay;
+  color: @text;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @subtle;
+  color: @text;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:checked {
+  background: @green;
+  color: @text;
+}
+
+.widget-volume,
+.widget-backlight {
+  background: @surface;
+  padding: 5px;
+  margin: 5px 10px;
+  font-size: 2rem;
+  color: @green;
+  border-radius: 1rem;
+}
+
+.widget-mpris {
+  color: @text;
+  background: @surface;
+  padding: 5px 10px;
+  margin: 5px 10px 5px 10px;
+  box-shadow: none;
+  border-radius: 1rem;
+}
+
+.widget-mpris>box>button,
+.widget-mpris-player,
+.widget-mpris-album-art {
+  border-radius: 1rem;
+  box-shadow: none;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+}

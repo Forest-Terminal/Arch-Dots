@@ -1,0 +1,27 @@
+/*
+* Variant: Everforest Dark Medium
+* Maintainer: Forest-Terminal
+*/
+
+@define-color base            #2d353b;
+@define-color surface         #343f44;
+@define-color overlay         #3d484d;
+
+@define-color muted           #475258;
+@define-color subtle          #4a444e;
+@define-color text            #d3c6aa;
+
+@define-color red	      #e67e80;
+@define-color orange	      #e69875;
+@define-color yellow	      #dbbc7f;
+@define-color green	      #a7c080;
+@define-color aqua	      #83c092;
+@define-color blue	      #7fbbb3;
+@define-color purple	      #d699b6;
+
+@define-color highlightLow    #2a283e;
+@define-color highlightMed    #4f585e;
+@define-color highlightHigh   #56635f;
+
+@define-color border	      #859289;
+@define-color select	      #a7c080;

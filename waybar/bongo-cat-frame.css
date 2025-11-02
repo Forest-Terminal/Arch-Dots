@@ -1,0 +1,13 @@
+  @import "/home/forest-terminal/.cache/wal/colors-waybar.css";
+#custom-bongocat {
+  min-width: 50px;
+  min-height: 16px;
+  background-image: url("file:///home/forest-terminal/.config/waybar/assets/Bongo_Cat_0.png?ts=1762119247");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+    margin: 10px 5px 0px 5px;
+    border: 2px solid @color8;
+    border-radius: 10px;
+}
